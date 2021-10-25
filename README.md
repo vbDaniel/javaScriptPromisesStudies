@@ -37,6 +37,7 @@ readFile('./in1.txt')
     console.log(String(contents))
   })
 ```
+O promisse alarga o codigo para baixo e nao para o lado formando uma pirâmide assim facilitando manutenção 
 Comsumo de API:
 
 Objetos primordiais:
@@ -48,6 +49,20 @@ Objetos primordiais:
 - Order Statuses
 
 
+## async/await
+
+Uma função  async é uma promisse que pode ser gerada em um formato diferente, possibilitando  dar um await na promisse então  facilita a manipulação  assíncrona.
+```JavaScript 
+const init = async() => {
+  try{
+  const contents = await readFile('./in1.txt')
+  const contents2 = await readFile('./in2.txt')
+  console.log(String(contents))
+  console.log(String(contents2))
+  }catch(err){
+    console.log(err)
+  }
+}  
 
 
 

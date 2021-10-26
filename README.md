@@ -51,6 +51,8 @@ Objetos primordiais:
 
 ## async/await
 
+Chamada sincrona é quando se espera o resultado em sequencia, JavaScript  é assíncrona  pois não  necessariamente vai aguardar pela resposta de uma linha.
+
 Uma função  async é uma promisse que pode ser gerada em um formato diferente, possibilitando  dar um await na promisse então  facilita a manipulação  assíncrona.
 ```JavaScript 
 const init = async() => {
@@ -64,6 +66,10 @@ const init = async() => {
   }
 }  
 ```
+
+A ideia do async/await é dar ao JavaScript uma função sincrona mais completa;
+
+
 
 
 
